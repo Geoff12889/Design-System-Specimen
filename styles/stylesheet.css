@@ -430,3 +430,9 @@ footer {
         padding: var(--space-4) 0;
     }
 }
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
