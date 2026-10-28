@@ -232,13 +232,16 @@ h1 {
     font-size: var(--size-small);
 }
 
-.swatches span {
+.swatch-item {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
+    white-space: nowrap;
 }
 
 .swatch {
+    display: inline-block;
+    flex: 0 0 1.5rem;
     width: 1.5rem;
     height: 1.5rem;
     border: var(--border-width-hairline) solid var(--color-line);
