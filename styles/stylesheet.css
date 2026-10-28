@@ -402,3 +402,31 @@ footer {
     color: var(--color-muted);
     font-size: var(--size-small);
 }
+
+@media (max-width: 42rem) {
+    .site-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    
+    .project-grid, .theme-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .state-examples {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .action-row {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .action-row > * {
+        width: 100%;
+    }
+    
+    .specimen {
+        padding: var(--space-4) 0;
+    }
+}
