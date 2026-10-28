@@ -136,3 +136,61 @@ h1 {
     margin: var(--space-2) 0 var(--space-3);
     font: 700 var(--size-hero)/0.96 var(--font-display); letter-spacing: -0.06em;
 }
+
+.intro {
+    max-width: 42rem;
+    margin-bottom: var(--space-3);
+    font-size: var(--size-lead);
+}
+
+.button {
+    display: inline-flex;
+    min-height: var(--control-height);
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-compact);
+    padding: 0.7rem 1rem;
+    border: var(--border-width-action) solid var(--color-accent);
+    border-radius: var(--radius-control);
+    background: var(--color-accent);
+    color: var(--color-accent-ink);
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover, .button-demo-hover {
+    filter: brightness(0.93);
+}
+
+.button-demo-focus {
+    outline: var(--border-width-focus) solid var(--color-focus);
+    outline-offset: 4px;
+}
+
+.button:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+}
+
+.button-silent {
+    background: transparent;
+    color: var(--color-accent);
+}
+
+.about-section {
+    max-width: 48rem;
+    padding: 0 0 var(--space-5);
+}
+
+.about-section h2 {
+    margin: var(--space-tight) 0 var(--space-2);
+    font: 700 clamp(1.8rem, 5vw, 3rem)/1.1 var(--font-ui);
+    letter-spacing: -0.04rem;
+}
+
+.about-section > p:last-child, .section-intro {
+    max-width: 42rem;
+    color: var(--color-muted);
+}
