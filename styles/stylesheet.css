@@ -330,3 +330,32 @@ h1 {
     margin-bottom: var(--space-2);
     color: var(--color-muted);
 }
+
+.theme-pane {
+    display: grid;
+    justify-items: start;
+    gap: 0.5rem;
+    padding: var(--space-3);
+    border: var(--border-width-hairline) solid var(--color-line);
+    border-radius: var(--radius-card);
+    background: var(--color-surface);
+}
+
+.theme-pane > p:not(.label) {
+    margin-bottom: var(--space-2);
+    color: var(--color-muted);
+}
+
+.theme-dark {
+    --color-paper: #191d1a;
+    --color-surface: #272d28;
+    --color-ink: #f6f3ec;
+    --color-muted: #c6cbc2;
+    --color-line: #545e55;
+    --color-accent: #ff967f;
+    --color-accent-ink: #251915;
+    --color-focus: #8bc9ff;
+    color-scheme: dark;
+    background: var(--color-paper);
+    color: var(--color-ink);
+}
