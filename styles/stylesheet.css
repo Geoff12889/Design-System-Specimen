@@ -187,10 +187,21 @@ h1 {
 .about-section h2 {
     margin: var(--space-tight) 0 var(--space-2);
     font: 700 clamp(1.8rem, 5vw, 3rem)/1.1 var(--font-ui);
-    letter-spacing: -0.04rem;
+    letter-spacing: -0.04em;
 }
 
 .about-section > p:last-child, .section-intro {
     max-width: 42rem;
     color: var(--color-muted);
+}
+
+.specimen {
+    padding: var(--space-5) 0;
+    border-top: var(--border-width-hairline) solid var(--color-line);
+}
+
+.specimen > h2 {
+    margin: var(--space-tight) 0 var(--space-3);
+    font: 700 clamp(1.8rem, 5vw, 3rem)/1.1 var(--font-ui);
+    letter-spacing: -0.04em;
 }
