@@ -1,3 +1,4 @@
+/* Global Design Tokens */
 :root {
     --color-paper: #f6f3ec;
     --color-surface: #fffefa;
@@ -32,4 +33,26 @@
     --border-width-notice: 4px;
     --shadow-card: 0 10px 32px rgb(32 35 31 / 8%);
     --content-width: 72rem;
+}
+
+/* Selective Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, p {
+    margin: 0;
+}
+
+img, svg {
+    display: block;
+    max-width: 100%;
+}
+
+button, input {
+    font: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
 }
