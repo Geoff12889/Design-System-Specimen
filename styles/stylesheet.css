@@ -205,3 +205,20 @@ h1 {
     font: 700 clamp(1.8rem, 5vw, 3rem)/1.1 var(--font-ui);
     letter-spacing: -0.04em;
 }
+
+.type-sample, .contact-card {
+    padding: clamp(1rem, 4vw, 2.5rem);
+    border: var(--border-width-hairline) solid var(--color-line);
+    border-radius: var(--radius-card);
+    background: var(--color-surface);
+}
+
+.type-sample h3 {
+    margin: var(--space-tight) 0 var(--space-2);
+    font: 700 clamp(2rem, 6vw, 4rem)/1 var(--font-display);
+    letter-spacing: -0.04em;
+}
+
+.type-sample > p:last-child {
+    margin-top: var(--space-2);
+}
