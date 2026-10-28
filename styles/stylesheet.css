@@ -12,6 +12,7 @@
     --color-art-sage: #c5d2a8;
     --font-display: Georgia, "Times New Roman", serif;
     --font-ui: Arial, Helvetica, sans-serif;
+    --line-height-body: 1.65;
     --size-small: 0.875rem;
     --size-body: 1rem;
     --size-lead: 1.2rem;
@@ -55,4 +56,25 @@ button, input {
 
 html {
     scroll-behavior: smooth;
+}
+
+/* Design and Layout */
+body {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font: var(--size-body)/var(--line-height-body) var(--font-display);
+}
+
+a {
+    color: var(--color-accent);
+    text-underline-offset: 0.2em;
+}
+
+a:hover {
+    text-decoration-thickness: 0.14em;
+}
+
+:focus-visible {
+    outline: var(--border-width-focus) solid var(--color-focus);
+    outline-offset: 4px;
 }
