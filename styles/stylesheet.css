@@ -277,3 +277,41 @@ h1 {
     justify-items: start;
     gap: var(--space-2);
 }
+
+.inline-link {
+    font-weight: 700;
+}
+
+.project-grid, .theme-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-3);
+}
+
+.project-card {
+    overflow: hidden;
+    border: var(--border-width-hairline) solid var(--color-line);
+    border-radius: var(--radius-card);
+    background: var(--color-surface);
+    box-shadow: var(--shadow-card);
+}
+
+.project-art {
+    display: flex;
+    min-height: 14rem;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: var(--space-2);
+    background: var(--color-art-coral);
+    color: var(--color-ink);
+    font: 700 0.75rem var(--font-ui);
+    letter-spacing: 0.08em;
+}
+
+.project-number {
+    font: 700 5rem/0.8 var(--font-display);
+}
+
+.art2 {
+    background: var(--color-art-sage);
+}
