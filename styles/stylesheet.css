@@ -315,3 +315,18 @@ h1 {
 .art2 {
     background: var(--color-art-sage);
 }
+
+.card-body {
+    padding: var(--space-3);
+}
+
+.card-body h3, .theme-pane h3 {
+    margin: var(--space-tight) 0;
+    font: 700 var(--size-card-title)/1.15 var(--font-ui);
+    letter-spacing: -0.03em;
+}
+
+.card-body > p:not(.label) {
+    margin-bottom: var(--space-2);
+    color: var(--color-muted);
+}
