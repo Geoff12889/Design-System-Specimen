@@ -127,7 +127,7 @@ nav a {
     padding: clamp(4rem, 12vw, 9rem) 0 var(--space-5);
 }
 
-.label, .section-label, .swatches, .button, .token-card, .measure-list, label, footer {
+.label, .section-label, .swatches, .button, .token-card, .measure-list, .token-text, label, footer {
     font-family: var(--font-ui);
 }
 
@@ -345,7 +345,7 @@ code {
     background: var(--color-art-sage);
 }
 
-.token-card code, .measure-list code {
+.token-card code, .measure-list code, .token-text code {
     overflow-wrap: anywhere;
     color: var(--color-ink);
     background: transparent;
@@ -356,7 +356,7 @@ code {
     color: var(--color-muted);
 }
 
-.token-card small {
+.token-card small, .token-text small {
     color: var(--color-muted);
 }
 
@@ -366,12 +366,12 @@ code {
     gap: var(--space-3);
 }
 
-.measure-list {
+.measure-list, .token-text {
     display: grid;
     gap: var(--space-1);
 }
 
-.measure-list > div {
+.measure-list > div, .token-text {
     position: relative;
     min-height: 3rem;
     padding: var(--space-2);
@@ -379,14 +379,18 @@ code {
     border-radius: var(--radius-control);
     background: var(--color-surface);
     font-size: var(--size-small);
+}
+
+.measure-list > div {
     display: grid;
     grid-template-columns: minmax(6rem, auto) minmax(2rem, 1fr) auto;
     gap: var(--space-1);
     align-items: center;
 }
 
-.measure-list .token-value {
+.measure-list .token-value, .token-text .token-value {
     font-weight: 700;
+    color: var(--color-ink);
 }
 
 .measure {
@@ -422,6 +426,10 @@ code {
 
 .measure-compact {
     width: var(--space-compact);
+}
+
+.token-text {
+    grid-template-columns: minmax(0, 1fr);
 }
 
 .state-examples {
