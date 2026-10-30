@@ -127,7 +127,7 @@ nav a {
     padding: clamp(4rem, 12vw, 9rem) 0 var(--space-5);
 }
 
-.label, .section-label, .swatches, .button, label, footer {
+.label, .section-label, .swatches, .button, .token-card, .measure-list, label, footer {
     font-family: var(--font-ui);
 }
 
@@ -345,7 +345,7 @@ code {
     background: var(--color-art-sage);
 }
 
-.token-card code {
+.token-card code, .measure-list code {
     overflow-wrap: anywhere;
     color: var(--color-ink);
     background: transparent;
@@ -358,6 +358,70 @@ code {
 
 .token-card small {
     color: var(--color-muted);
+}
+
+.token-columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-3);
+}
+
+.measure-list {
+    display: grid;
+    gap: var(--space-1);
+}
+
+.measure-list > div {
+    position: relative;
+    min-height: 3rem;
+    padding: var(--space-2);
+    border: var(--border-width-hairline) solid var(--color-line);
+    border-radius: var(--radius-control);
+    background: var(--color-surface);
+    font-size: var(--size-small);
+    display: grid;
+    grid-template-columns: minmax(6rem, auto) minmax(2rem, 1fr) auto;
+    gap: var(--space-1);
+    align-items: center;
+}
+
+.measure-list .token-value {
+    font-weight: 700;
+}
+
+.measure {
+    display: block;
+    height: 0.35rem;
+    border-radius: 99rem;
+    background: var(--color-accent);
+}
+
+.measure-1 {
+    width: var(--space-1);
+}
+
+.measure-2 {
+    width: var(--space-2);
+}
+
+.measure-3 {
+    width: var(--space-3);
+}
+
+.measure-4 {
+    width: var(--space-4);
+}
+
+.measure-5 {
+    width: var(--space-5);
+}
+
+.measure-tight {
+    width: var(--space-tight);
+}
+
+.measure-compact {
+    width: var(--space-compact);
 }
 
 .state-examples {
@@ -505,7 +569,7 @@ footer {
         flex-direction: column;
     }
     
-    .project-grid, .theme-grid {
+    .project-grid, .theme-grid, .token-columns {
         grid-template-columns: 1fr;
     }
 
