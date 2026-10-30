@@ -468,6 +468,39 @@ code {
     margin-top: var(--space-2);
 }
 
+.theme-inventory {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-3);
+    margin-top: var(--space-3);
+}
+
+.theme-swatch {
+    padding: var(--space-3);
+    border: var(--border-width-hairline) solid var(--color-line);
+    border-radius: var(--radius-card);
+    background: var(--color-surface);
+    color: var(--color-ink);
+}
+
+.theme-swatch p + p {
+    margin: var(--space-1) 0 var(--space-2);
+}
+
+.theme-dark {
+    --color-paper: #191d1a;
+    --color-surface: #272d28;
+    --color-ink: #f6f3ec;
+    --color-muted: #c6cbc2;
+    --color-line: #545e55;
+    --color-accent: #ff967f;
+    --color-accent-ink: #251915;
+    --color-focus: #8bc9ff;
+    color-scheme: dark;
+    background: var(--color-paper);
+    color: var(--color-ink);
+}
+
 .state-examples {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -550,20 +583,6 @@ code {
     color: var(--color-muted);
 }
 
-.theme-dark {
-    --color-paper: #191d1a;
-    --color-surface: #272d28;
-    --color-ink: #f6f3ec;
-    --color-muted: #c6cbc2;
-    --color-line: #545e55;
-    --color-accent: #ff967f;
-    --color-accent-ink: #251915;
-    --color-focus: #8bc9ff;
-    color-scheme: dark;
-    background: var(--color-paper);
-    color: var(--color-ink);
-}
-
 .contact-card {
     max-width: 42rem;
 }
@@ -613,7 +632,7 @@ footer {
         flex-direction: column;
     }
     
-    .project-grid, .theme-grid, .token-columns, .shape-samples {
+    .project-grid, .theme-grid, .token-columns, .shape-samples, .theme-inventory {
         grid-template-columns: 1fr;
     }
 

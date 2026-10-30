@@ -24,7 +24,7 @@
             <h2 id="about-title">Get to know me.</h2>
             <p>I am a husband, and a father of three beautiful children. I am a United States Air Force veteran with 13 years serving as an intelligence analyst assigned to the United States Air Force Special Operations Command. I am currently a full time student at Arizona State University majoring in Graphic Information Technology - Full Stack Web Development. With a strong interest in electronics, software and hardware engineering, I spend the majority of my time developing software and hardware that makes my life easier. I'm happy to share what I've been working on lately. Please check out my collection of projects below!</p>
         </section>
-        <section class="specimen" aria-labelledby="reset-title">
+        <section class="specimen" id="s1" aria-labelledby="reset-title">
             <p class="section-label">S1</p>
             <h2 id="reset-title">Foundations and reset</h2>
             <p class="section-summary">My implementation of a compact reset which retains a predictable starting point and native features.</p>
@@ -38,7 +38,7 @@
                 <p>My reset is selective, keeping the native form behavior. The stylesheet adds a visible keyboard-focus outline.</p>
             </div>
         </section>
-        <section class="specimen" aria-labelledby="token-title">
+        <section class="specimen" id="s2" aria-labelledby="token-title">
             <p class="section-label">S2</p>
             <h2 id="token-title">Token inventory</h2>
             <p class="section-summary">These are the global tokens used for the styling of this page.</p>
@@ -234,6 +234,26 @@
                         <span class="token-value">1.5rem</span>
                         <small>Card title</small>
                     </div>
+                </div>
+            </div>
+            <div class="token-group">
+                <h3>Theme color values</h3>
+                <div class="token-text">
+                    <code>.theme-dark</code>
+                    <span class="token-value">paper: #191d1a; surface: #272d28; ink: #f6f3ec; muted: #62685f; line: #d3d5cc; accent: #bd3d2d; accent-ink: #fffefa; focus: #075fa8; art-coral: #e5a98d; art-sage: #c5d2a8;</span>
+                    <small>Alternative dark color theme overriding the global color tokens; the rest of the rules remain shared.</small>
+                </div>
+            </div>
+            <div class="theme-inventory">
+                <div class="theme-swatch">
+                    <p class="label">Default theme</p>
+                    <p>Warm canvas with dark text and coral actionable items</p>
+                    <a href="#">Sample link</a>
+                </div>
+                <div class="theme-swatch theme-dark">
+                    <p class="label">Alternate theme</p>
+                    <p>Dark canvas with light text and bright actionable items</p>
+                    <a href="#">Sample link</a>
                 </div>
             </div>
         </section>
