@@ -345,7 +345,7 @@ code {
     background: var(--color-art-sage);
 }
 
-.token-card code, .measure-list code, .token-text code {
+.token-card code, .measure-list code, .token-text code, .shape-sample code {
     overflow-wrap: anywhere;
     color: var(--color-ink);
     background: transparent;
@@ -430,6 +430,42 @@ code {
 
 .token-text {
     grid-template-columns: minmax(0, 1fr);
+}
+
+.shape-samples {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-2);
+}
+
+.shape-sample {
+    display: grid;
+    align-content: center;
+    gap: var(--space-1);
+    min-height: 6rem;
+    padding: var(--space-2);
+    border: var(--border-width-hairline) solid var(--color-line);
+    background: var(--color-surface);
+    font: var(--size-small)/1.3 var(--font-ui);
+    overflow-wrap: anywhere;
+}
+
+.radius-control {
+    border-radius: var(--radius-control);
+}
+
+.radius-card {
+    border-radius: var(--radius-card);
+}
+
+.shadow-card {
+    border: 0;
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-card);
+}
+
+.border-token {
+    margin-top: var(--space-2);
 }
 
 .state-examples {
@@ -577,21 +613,12 @@ footer {
         flex-direction: column;
     }
     
-    .project-grid, .theme-grid, .token-columns {
+    .project-grid, .theme-grid, .token-columns, .shape-samples {
         grid-template-columns: 1fr;
     }
 
     .state-examples {
         grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .action-row {
-        align-items: stretch;
-        flex-direction: column;
-    }
-
-    .action-row > * {
-        width: 100%;
     }
     
     .specimen {
