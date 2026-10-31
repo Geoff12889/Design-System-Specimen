@@ -275,6 +275,10 @@ code {
     margin-top: var(--space-3);
 }
 
+.token-group > .token-text + .token-text {
+    margin-top: var(--space-1);
+}
+
 .token-grid {
     display: grid;
     gap: var(--space-2);
@@ -366,6 +370,11 @@ code {
     gap: var(--space-3);
 }
 
+.measure-list {
+    container-type: inline-size;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .measure-list, .token-text {
     display: grid;
     gap: var(--space-1);
@@ -383,9 +392,28 @@ code {
 
 .measure-list > div {
     display: grid;
-    grid-template-columns: minmax(6rem, auto) minmax(2rem, 1fr) auto;
-    gap: var(--space-1);
+    grid-template-columns: max-content minmax(0, 1fr);
+    grid-template-areas: "name measure" "value value" "description description";
     align-items: center;
+    gap: var(--space-1);
+}
+
+.measure-list > div > code {
+    grid-area: name;
+    min-width: 0;
+    overflow-wrap: normal;
+}
+
+.measure-list > div > .measure {
+    grid-area: measure;
+}
+
+.measure-list > div > .token-value {
+    grid-area: value;
+}
+
+.measure-list > div > small {
+    grid-area: description;
 }
 
 .measure-list .token-value, .token-text .token-value {
@@ -466,6 +494,10 @@ code {
 
 .border-token {
     margin-top: var(--space-2);
+}
+
+.token-grid-typography {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .theme-inventory {
@@ -632,10 +664,10 @@ footer {
         flex-direction: column;
     }
     
-    .project-grid, .theme-grid, .token-columns, .shape-samples, .theme-inventory {
+    .project-grid, .theme-grid, .token-columns, .shape-samples, .theme-inventory, .token-grid-typography {
         grid-template-columns: 1fr;
     }
-
+    
     .state-examples {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -645,8 +677,24 @@ footer {
     }
 }
 
+@media (max-width: 30rem) {
+    .measure-list {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media (prefers-reduced-motion: reduce) {
     html {
         scroll-behavior: auto;
+    }
+}
+
+@container (max-width: 23rem) {
+    .measure-list > div {
+        grid-template-areas: "name name" "measure measure" "value value" "description description";
+    }
+    
+    .measure-list > div > .measure {
+        justify-self: start;
     }
 }
