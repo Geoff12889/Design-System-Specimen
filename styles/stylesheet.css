@@ -500,7 +500,7 @@ code {
     grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.theme-inventory, .theme-surfaces {
+.theme-inventory, .theme-surfaces, .control-themes {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: var(--space-3);
@@ -751,7 +751,7 @@ footer {
         flex-direction: column;
     }
     
-    .project-grid, .theme-grid, .token-columns, .shape-samples, .theme-inventory, .token-grid-typography, .content-grid, .theme-surfaces {
+    .project-grid, .theme-grid, .token-columns, .shape-samples, .theme-inventory, .token-grid-typography, .content-grid, .theme-surfaces, .control-themes {
         grid-template-columns: 1fr;
     }
     

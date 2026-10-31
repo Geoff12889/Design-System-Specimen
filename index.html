@@ -347,16 +347,28 @@
                 </article>                
             </div>
         </section>
-        <section class="specimen" id="contact" aria-labelledby="contact-title">
-            <p class="section-label">06 / Contact</p>
-            <h2 id="contact-title">Contact &amp; Form</h2>
-            <form class="contact-card" action="#" method="get">
-                <label for="email">Email address</label>
-                <div class="form-row">
-                    <input id="email" name="email" type="email" autocomplete="email" placeholder="your_email_address@example.com" />
-                    <button class="button" type="submit">Send</button>
-                </div>
-            </form>
+        <section class="specimen" id="s6" aria-labelledby="control-title">
+            <p class="section-label">S6</p>
+            <h2 id="control-title">Control foundations</h2>
+            <p class=section-summary">Each control element has a visible element and receives keyboard focus with outline.</p>
+            <div class="control-themes">
+                <form class="contact-card" action="#" method="get">
+                    <p class="label">Default theme</p>
+                    <label for="email-light">Email address</label>
+                    <div class="form-row">
+                        <input id="email-light" name="email-light" type="email" autocomplete="email" placeholder="your_email_address@example.com" />
+                        <button class="button" type="submit">Send</button>
+                    </div>
+                </form>
+                <form class="contact-card theme-dark" action="#" method="get">
+                    <p class="label">Default theme</p>
+                    <label for="email-dark">Email address</label>
+                    <div class="form-row">
+                        <input id="email-dark" name="email-dark" type="email" autocomplete="email" placeholder="your_email_address@example.com" />
+                        <button class="button" type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
     <footer>
