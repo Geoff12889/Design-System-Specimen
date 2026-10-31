@@ -500,14 +500,14 @@ code {
     grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.theme-inventory {
+.theme-inventory, .theme-surfaces {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: var(--space-3);
     margin-top: var(--space-3);
 }
 
-.theme-swatch {
+.theme-swatch, .theme-card {
     padding: var(--space-3);
     border: var(--border-width-hairline) solid var(--color-line);
     border-radius: var(--radius-card);
@@ -515,7 +515,7 @@ code {
     color: var(--color-ink);
 }
 
-.theme-swatch p + p {
+.theme-swatch p + p, .theme-card p + p {
     margin: var(--space-1) 0 var(--space-2);
 }
 
@@ -577,6 +577,61 @@ code {
     border: var(--border-width-hairline) solid var(--color-line);
     border-radius: var(--radius-control);
     background: var(--color-surface);
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.3fr) minmax(0, 0.7fr);
+    gap: var(--space-3);
+}
+
+.project-card, .compact-card {
+    overflow: hidden;
+    border: var(--border-width-hairline) solid var(--color-line);
+    border-radius: var(--radius-card);
+    background: var(--color-surface);
+    box-shadow: var(--shadow-card);
+}
+
+.media-placeholder {
+    display: flex;
+    min-height: 13rem;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: var(--space-2);
+    background: var(--color-art-coral);
+    color: var(--color-ink);
+    font: 700 var(--size-small)/1.2 var(--font-ui);
+    letter-spacing: 0.08em;
+}
+
+.compact-card {
+    padding: var(--space-3);
+    background: var(--color-surface);
+    box-shadow: none;
+}
+
+.card-content {
+    padding: var(--space-3);
+}
+
+.card-content h3, .compact-card h3 {
+    margin: var(--space-1) 0;
+}
+
+.card-content p:not(.type-meta), .compact-card p:not(.label) {
+    margin-bottom: var(--space-2);
+    color: var(--color-muted);
+}
+
+.theme-card {
+    background: var(--color-surface);
+    color: var(--color-ink);
+    box-shadow: var(--shadow-card);
+}
+
+.theme-card p:not(.label) {
+    color: var(--color-muted);
 }
 
 .inline-link {
@@ -696,7 +751,7 @@ footer {
         flex-direction: column;
     }
     
-    .project-grid, .theme-grid, .token-columns, .shape-samples, .theme-inventory, .token-grid-typography {
+    .project-grid, .theme-grid, .token-columns, .shape-samples, .theme-inventory, .token-grid-typography, .content-grid, .theme-surfaces {
         grid-template-columns: 1fr;
     }
     
