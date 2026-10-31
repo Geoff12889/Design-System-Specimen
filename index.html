@@ -260,7 +260,7 @@
             </div>
         </section>
         <section class="specimen" id="s3" aria-labelledby="typography-title">
-            <p class="section-label">03</p>
+            <p class="section-label">S3</p>
             <h2 id="typography-title">Typography</h2>
             <div class="type-specimen">
                 <p class="label">Section label</p>
@@ -274,24 +274,36 @@
                 <p>The hero is sized using <code>clamp()</code> to scale between a minimum and maximum. The body text uses a capped measure/line length for readability.</p>
             </div>
         </section>
-        <section class="specimen" aria-labelledby="states-title">
-            <p class="section-label">04 / Component States</p>
-            <h2 id="states-title">Interaction &amp; Status States</h2>
-            <p class="section-intro">This specimen shows how shared components change for hover, keyboard focus, and disabled states.</p>
-            <div class="state-examples">
-                <div>
+        <section class="specimen" id="s4" aria-labelledby="actions-title">
+            <p class="section-label">S4</p>
+            <h2 id="actions-title">Actions and states</h2>
+            <p class="section-intro">Demonstrates the mouse pointer and keyboard actions and states.</p>
+            <div class="action-state-sample-grid" aria-label="Button and link previews">
+                <div class="action-card">
+                    <p class="label">Text link</p>
+                    <a class="text-link" href="#">Example</a>
+                </div>
+                <div class="action-card">
+                    <p class="label">Primary button</p>
+                    <button class="button" type="button">Example</button>
+                </div>
+                <div class="action-card">
+                    <p class="label">Secondary button</p>
+                    <button class="button button-secondary" type="button">Example</button>
+                </div>
+                <div class="state-card">
                     <p class="label">Default</p>
                     <button class="button" type="button">Preview</button>
                 </div>
-                <div>
+                <div class="state-card">
                     <p class="label">Hover</p>
                     <button class="button button-demo-hover" type="button">Preview</button>
                 </div>
-                <div>
+                <div class="state-card">
                     <p class="label">Focus</p>
                     <button class="button button-demo-focus" type="button">Preview</button>
                 </div>
-                <div>
+                <div class="state-card">
                     <p class="label">Disabled</p>
                     <button class="button button-demo-disabled" type="button" disabled="true">Preview</button>
                 </div>
