@@ -533,6 +533,33 @@ code {
     color: var(--color-ink);
 }
 
+.type-specimen {
+    max-width: 42rem;
+    padding: clamp(1rem, 4vw, 2.5rem);
+    border: var(--border-width-hairline) solid var(--color-line);
+    border-radius: var(--radius-card);
+    background: var(--color-surface);
+}
+
+.type-display {
+    margin: var(--space-1) 0 var(--space-2);
+    font: 700 clamp(2rem, 6vw, 4rem)/0.98 var(--font-display);
+    letter-spacing: -0.045em;
+}
+
+.type-lead {
+    margin: var(--space-2) 0;
+    font-size: var(--size-lead);
+}
+
+.font-documentation {
+    margin-top: var(--space-3);
+}
+
+.font-documentation p + p {
+    margin-top: var(--space-2);
+}
+
 .state-examples {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
