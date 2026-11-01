@@ -1,7 +1,7 @@
 # Geoffrey Woytt's Personal Portfolio Design System Specimen
 
-(GitHub Repo)[https://github.com/Geoff12889/Design-System-Specimen]
-(Published URL)[https://geoff12889.github.io/Design-System-Specimen/]
+[GitHub Repo](https://github.com/Geoff12889/Design-System-Specimen)
+[Published URL](https://geoff12889.github.io/Design-System-Specimen/)
 
 ## Project
 
@@ -75,7 +75,7 @@ The contrast is appropriate for both the light and dark themes.
 
 The font falls back to the alternatives in the event the primary font is unavailable.
 
-The HTML and CSS both validate using (Nu Html Checker)[https://validator.w3.org/nu/#textarea] and (The W3C CSS Validation Service)[https://jigsaw.w3.org/css-validator/#validate_by_input] respectively.
+The HTML and CSS both validate using [Nu Html Checker](https://validator.w3.org/nu/#textarea) and [The W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input) respectively.
 
 Loading the webpage in a private browser loads the same as a non-private browser.
 
